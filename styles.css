@@ -1,0 +1,568 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --color: rgb(221, 47, 47);
+  --color2: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--color2);
+  position: fixed;
+  width: 100vw;
+  -webkit-box-shadow: 0 1px 7px 0px #353535;
+          box-shadow: 0 1px 7px 0px #353535;
+  z-index: 10000;
+  font-size: 13px;
+}
+
+header nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 8rem;
+  padding: 1rem;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+header nav .nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+main #Korzysci {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6rem;
+}
+
+main #Korzysci .walizka {
+  position: absolute;
+}
+
+main #Korzysci .walizka img {
+  width: 500px;
+  height: 460px;
+  z-index: 100;
+}
+
+main #Korzysci .onas-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Korzysci .onas-label h1 {
+  text-align: center;
+  font-size: 1.20rem;
+}
+
+main #Korzysci .onas-label .line {
+  height: 18px;
+  border-bottom: 4px #dd2f2f solid;
+  width: 40px;
+}
+
+main #Korzysci .main-korzysci {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12rem 12rem 12rem;
+      grid-template-columns: 12rem 12rem 12rem;
+  gap: 6rem;
+  z-index: 1000;
+}
+
+main #Korzysci .main-korzysci .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Korzysci .main-korzysci .box .tekst {
+  margin-top: 1rem;
+  text-align: center;
+  display: inline-block;
+  z-index: 100;
+  font-size: 12px;
+}
+
+main #Korzysci .main-korzysci .box .tekst h3 {
+  margin-bottom: 0.5rem;
+}
+
+main #Korzysci .main-korzysci .box img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  background-color: #efefef;
+  border: 4px solid #fff;
+  -webkit-box-shadow: 0 0 0 5px #efefef;
+          box-shadow: 0 0 0 5px #efefef;
+}
+
+main #Onas {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+main #Onas .onas-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Onas .onas-label h1 {
+  text-align: center;
+  font-size: 1.20rem;
+}
+
+main #Onas .onas-label .line {
+  height: 18px;
+  border-bottom: 4px #dd2f2f solid;
+  width: 40px;
+}
+
+main #Onas .main-onas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr 1fr 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr 1fr 1fr));
+  padding: 3rem;
+}
+
+main #Onas .main-onas .box {
+  border: 1px solid #d6dce2;
+}
+
+main #Onas .main-onas .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+main #Kontakt {
+  background-image: url("/img/zdjecie00.png");
+  background-size: cover;
+  opacity: 0.9;
+}
+
+main #Kontakt .contact-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+main #Kontakt .contact-container .kontakt-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 0;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Kontakt .contact-container .kontakt-label h1 {
+  text-align: center;
+  font-size: 1.20rem;
+}
+
+main #Kontakt .contact-container .kontakt-label .line {
+  height: 30px;
+  border-left: 4px var(--color) solid;
+  width: 30px;
+}
+
+main #Kontakt .contact-container .form {
+  width: 100%;
+  max-width: 700px;
+}
+
+main #Kontakt .contact-container .form .group-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+main #Kontakt .contact-container .form .group-names .form-control {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 1rem;
+}
+
+main #Kontakt .contact-container .form .group-names .form-control .error {
+  color: red;
+}
+
+main #Kontakt .contact-container .form .group-names .form-control input {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+main #Kontakt .contact-container .form .group-names .form-control .tital-label {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+main #Kontakt .contact-container .form .form-control-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+main #Kontakt .contact-container .form .form-control-message label {
+  margin-bottom: 1rem;
+}
+
+main #Kontakt .contact-container .form .form-control-message textarea {
+  background-color: white;
+  border-radius: 5px;
+}
+
+main #Kontakt .contact-container .form .form-control-bottom {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #Kontakt .contact-container .form .form-control-bottom .oswiadczenie {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid black;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #f1f1f7;
+}
+
+main #Kontakt .contact-container .form .form-control-bottom .checkbox-round {
+  margin-right: 1rem;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: var(--color2);
+  border-radius: 5px;
+  vertical-align: middle;
+  border: 1px solid black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main #Kontakt .contact-container .form .form-control-bottom .checkbox-round:checked {
+  background-color: var(--color);
+  -webkit-box-shadow: 0 0 0 5px var(--color2) inset;
+          box-shadow: 0 0 0 5px var(--color2) inset;
+}
+
+main #Kontakt .contact-container .form .button-container {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Kontakt .contact-container .form .button-container button {
+  width: 8rem;
+  height: 3rem;
+  color: black;
+  outline: none;
+  border: var(--color);
+  cursor: pointer;
+  background-color: var(--color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+main #Kontakt .contact-container .form .button-container button p {
+  padding-right: 1rem;
+  color: var(--color2);
+  font-size: 12px;
+}
+
+main #Kontakt .contact-container .form .button-container button .arrow1 {
+  position: absolute;
+  display: inline-block;
+  border: solid var(--color2);
+  border-width: 0 0 1px 0;
+  margin-bottom: 0.15rem;
+  margin-left: 3.5rem;
+  padding: 1px;
+  width: 1.15rem;
+}
+
+main #Kontakt .contact-container .form .button-container button .arrow2 {
+  display: inline-block;
+  border: solid var(--color2);
+  border-width: 0 1px 1px 0;
+  padding: 3px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  margin-left: 0.4rem;
+  margin-bottom: 0.01rem;
+}
+
+.footer-socials {
+  background-color: #575757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer-socials p {
+  margin-left: 40%;
+  font-size: 12px;
+  white-space: nowrap;
+  color: white;
+}
+
+.footer-socials .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  margin-left: 25%;
+  list-style: none;
+}
+
+.footer-socials .social-media .gg-facebook {
+  color: var(--color2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: block;
+  -webkit-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  width: 10px;
+  height: 10px;
+}
+
+.footer-socials .social-media .gg-facebook::after,
+.footer-socials .social-media .gg-facebook::before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-socials .social-media .gg-facebook::before {
+  width: 8px;
+  height: 20px;
+  border-left: 4px solid;
+  border-top: 4px solid;
+  border-top-left-radius: 5px;
+  left: 6px;
+}
+
+.footer-socials .social-media .gg-facebook::after {
+  width: 10px;
+  height: 4px;
+  background: currentColor;
+  top: 7px;
+  left: 4px;
+  -webkit-transform: skew(-5deg);
+          transform: skew(-5deg);
+}
+
+.footer-socials .social-media .gg-youtube {
+  color: var(--color2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: block;
+  -webkit-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  width: 25px;
+  height: 18px;
+  -webkit-box-shadow: 0 0 0 2px;
+          box-shadow: 0 0 0 2px;
+  border-radius: 15px 15px 15px 15px / 45px 45px 45px 45px;
+}
+
+.footer-socials .social-media .gg-youtube::before {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  border-left: 5px solid currentColor;
+  border-top: 5px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+
+.footer-socials .social-media .gg-crowdfire {
+  color: var(--color2);
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-transform: scale(var(--ggs, 1));
+          transform: scale(var(--ggs, 1));
+  width: 20px;
+  height: 20px;
+}
+
+.footer-socials .social-media .gg-crowdfire::after,
+.footer-socials .social-media .gg-crowdfire::before {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-socials .social-media .gg-crowdfire::before {
+  width: 20px;
+  height: 20px;
+  border: 4px solid;
+  border-radius: 100px;
+  border-right-color: transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.footer-socials .social-media .gg-crowdfire::after {
+  width: 8px;
+  height: 8px;
+  border-top: 4px solid;
+  border-right: 4px solid;
+  right: 2px;
+  top: 2px;
+}
+
+@media only screen and (max-width: 999px) {
+  .walizka {
+    display: none;
+  }
+  .main-korzysci {
+    -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
+
+@media only screen and (min-width: 499px) {
+  .main-onas {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

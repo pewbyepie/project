@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Niezbedne do tworzenia ikon social mediów -->
+    <link href='https://css.gg/facebook.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- header składać się będzie z nav linków, w wersji mniejszej mozna schowac i zrobic burgera ktory bedzie je otwieral na event klikniecia-->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#Korzysci">Korzyści</a></li>
+                <li><a href="#Onas">O nas</a></li>
+                <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+       </header>
+       <!-- cały główny kontent w sekcji main podzielony na 3 sfery: korzysci, o nas i kontakt-->
+       <main>
+        <div id="Korzysci">
+          <div class="onas-label">
+            <h1>KORZYŚCI</h1>
+            <div class="line"></div>
+          </div>
+          <div class="walizka">
+            <img src="/img/zdjecie05.png" alt="">
+          </div>
+          <div class="main-korzysci">
+            <div class="box"><img src="/img/zdj01.png" alt="" class="image-man1">
+            <div class="tekst">
+            <h3>Dozywotnia gwarancja</h3>
+            <p>Wybierając nasze skrzynie transportowe otrzymujesz dozywotnią gwarancję.</p>
+            </div>
+          </div>
+            <div class="box"></div>
+            <div class="box"><img src="/img/zdj02.png" alt="" class="image-man2">
+              <div class="tekst">
+                <h3>Sprawna dostawa</h3>
+                <p>Zapewniamy sprawną dostawę na terenie całej Polski.</p>
+                </div>
+            </div>
+            <div class="box"><img src="/img/zdjecie03.png" alt="">
+              <div class="tekst">
+                <h3>Mozliwość zwrotu</h3>
+                <p>Mozliwość wymiany lub zwrotu kosztów</p>
+                </div>
+            </div>
+            <div class="box"></div>
+            <div class="box"><img src="/img/zdjecie04.png" alt="">
+              <div class="tekst">
+                <h3>Róznorodna oferta</h3>
+                <p>Proponujemy wybór spośród wielu wymiarów, modeli i kolorów</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="Onas">
+          <div class="onas-label">
+            <div class="line"></div>
+            <h1>O NAS</h1>
+          </div>
+            <div class="main-onas">
+              <div class="box box1"><img src="/img/zdjecie0.png" alt=""></div>
+              <div class="box box2"><img src="/img/zdjecie1.png" alt=""></div>
+              <div class="box box3"><img src="/img/zdjecie2.png" alt=""></div>
+              <div class="box box4"><img src="/img/zdjecie3.png" alt=""></div>
+              <div class="box box5"><img src="/img/zdjecie4.png" alt=""></div>
+              <div class="box box6"><img src="/img/zdjecie5.png" alt=""></div>
+            </div>
+        </div>
+        <div id="Kontakt">
+            <div class="contact-container">
+             <div class="kontakt-label">
+              <div class="line"></div>
+              <h1>FORMULARZ KONTAKTOWY</h1>
+            </div>
+            <form id="form" class="form">
+                <div class="group-names">
+                    <div class="form-control">
+                      <label class="tital-label">Imię i Nazwisko *</label>
+                      <input type="text" placeholder="Wpisz imię i nazwisko" id="imie" />
+                      <small></small>
+                    </div>
+                    <div class="form-control">
+                      <label class="tital-label">Nazwa firmy *</label>
+                      <input type="text" placeholder="Wpisz nazwę firmy" id="nazwafirmy" />
+                      <small></small>
+                    </div>  
+                </div>
+
+                <div class="group-names">
+                  <div class="form-control">
+                      <label class="tital-label">E-mail *</label>
+                      <input type="email" placeholder="Wpisz e-mail" id="email" value="email"/>
+                    <small></small>
+                  </div>
+                  <div class="form-control">
+                    <label class="tital-label">Telefon</label>
+                    <input type="number" placeholder="Wpisz numer" id="number" />
+                    <small></small>
+                  </div>  
+              </div>
+              
+                <div class="form-control-message">
+                  <label>Wiadomość *</label>
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+            
+              </div>
+                  <div class="form-control-bottom">
+                    <input type="checkbox" class="checkbox-round">
+                    <div class="oswiadczenie">
+                      <small>* Oświadczam, ze zapoznałem się i akceptuję Regulamin. Wyrazam zgodę na przetwarzanie moich danych osobowych przez N-cases, w celu świadczenia usług w ramach serwisu oraz kontaktu za pomocą urządzeń końcowych telekomunikacyjnych związanego ze zgłoszeniem.</small>
+                    </div> 
+                  </div>
+                  <div class="button-container">
+                    <button class="button"><p>WYŚLIJ</p> <div class="arrow1"></div><div class="arrow2"></div></button>
+                  </div>
+                </form>
+              </div>
+        </main>
+        <!-- Sekcja footer ktora bedzie miala napis polityka prywatnosci i liste social mediów -->
+    <div class="footer-socials">
+      <p>Polityka Prywatności</p>
+      <ul class="social-media">
+        <li><a href="#"><i class="gg-facebook"></i></a></li>
+        <li><a href="#"><i class="gg-youtube"></i></a></li>
+        <li><a href="#"><i class="gg-crowdfire"></i></a></li>
+    </ul>
+    </div>
+    <!-- Skrypt uzywany bedzie tylko do validacji value z inputow w dziale konktatu-->
+<script src="scripts.js"></script>
+</body>
+</html>

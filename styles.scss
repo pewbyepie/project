@@ -1,0 +1,486 @@
+// ogólny reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//zmienne 
+:root {
+    --color: rgb(221, 47, 47);
+    --color2: white;
+}
+// wrazie rozwarstwienia strony schowanie overflow na X
+body {
+    overflow-x: hidden;
+}
+//fixed header z nawigacją
+header {
+    background-color: var(--color2);
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 1px 7px 0px rgb(53, 53, 53);
+    z-index: 10000;
+    font-size: 13px;
+
+    nav {
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 8rem;
+            padding: 1rem;
+            gap: 2rem;
+            list-style-type: none;
+        
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+        }
+    }
+}
+//calutkie ciało
+main {
+    // sekcja korzysci
+    #Korzysci {
+        
+        .walizka {
+            position: absolute;
+            
+            img {
+                width: 500px;
+                height: 460px;
+                z-index: 100;
+            }
+
+        }
+
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6rem;
+
+        .onas-label {
+            
+            display: flex;
+            position: relative;
+            gap: 0.8rem;
+            align-items: center;
+
+        h1 {
+            text-align: center;
+            font-size: 1.20rem; 
+        }
+        .line {
+            height: 18px;
+            border-bottom: 4px rgb(221, 47, 47) solid;
+            width: 40px;
+            
+        }
+    }
+        .main-korzysci {
+            
+            display: grid;
+            grid-template-columns: 12rem 12rem 12rem;
+            gap: 6rem;
+            z-index: 1000;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .tekst {
+                    margin-top: 1rem;
+                    text-align: center;
+                    display: inline-block;
+                    z-index: 100;
+                    font-size: 12px;
+
+                    h3 {
+                        margin-bottom: 0.5rem;
+                        
+                    }
+                }
+
+                img {
+                    width: 130px;
+                    height: 130px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    background-color: rgb(239, 239, 239);
+                    border: 4px solid #fff;
+                    box-shadow: 0 0 0 5px rgb(239, 239, 239);
+                    
+                    
+                }
+            }
+        }
+
+    }
+    //sekcja o nas
+    #Onas {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        .onas-label {
+            
+                display: flex;
+                position: relative;
+                gap: 0.8rem;
+                align-items: center;
+
+            h1 {
+
+                text-align: center;
+                font-size: 1.20rem; 
+            }
+            .line {
+
+                height: 18px;
+                border-bottom: 4px rgb(221, 47, 47) solid;
+                width: 40px;
+                
+            }
+        }
+        
+        .main-onas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr 1fr 1fr));
+            padding: 3rem;
+            
+
+            .box {
+                border: 1px solid rgb(214, 220, 226);
+
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                    
+                }
+            }
+        }
+    }
+    //sekcja kontakt
+    #Kontakt {
+
+        background-image: url("/img/zdjecie00.png");
+        background-size: cover;
+        opacity: 0.9;
+
+        .contact-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4rem;
+
+            .kontakt-label {
+                display: flex;
+                position: relative;
+                top: 0;
+                gap: 0.8rem;
+                align-items: center;
+    
+                h1 {
+                    text-align: center;
+                    font-size: 1.20rem; 
+                }
+                .line {
+                    height: 30px;
+                    border-left: 4px var(--color) solid;
+                    width: 30px;
+                    
+                }
+            }
+                //form
+                .form {
+                    width: 100%;
+                    max-width: 700px;
+                    
+                    
+                    .group-names {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 2rem;
+
+                        .form-control {
+                            flex-basis: 50%;
+                            padding: 1rem;
+
+                            .error {
+                                color: red;
+                            }
+                            
+
+                            input {
+                                width: 100%;
+                                padding: 10px;
+                                outline: 0;
+                                border: 1px solid rgb(0, 0, 0);
+                                color: black;
+                                background-color: rgb(255, 255, 255);
+                                font-size: 14px;
+                                border-radius: 5px;
+                                
+                            }
+
+                            .tital-label {
+                                margin-bottom: 1rem;
+                                display: inline-block;
+                            }
+                        }
+                    }
+
+                    .form-control-message {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem;
+
+                        label {
+                            margin-bottom: 1rem;
+                        }
+
+                        textarea {
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 5px;
+                        }
+                        
+                    }
+                    
+                    .form-control-bottom {
+                        padding: 1rem;
+                        display: flex;
+                        
+                        .oswiadczenie {
+                            width: 100%;
+                            padding: 0.4rem;
+                            border: 1px solid rgb(0, 0, 0);
+                            font-size: 14px;
+                            border-radius: 5px;
+                            background-color: rgb(241, 241, 247);
+                        }
+                        // tworzenie checkboxa
+                        .checkbox-round {
+                            margin-right: 1rem;
+                            width: 1.3em;
+                            height: 1.3em;
+                            background-color: var(--color2);
+                            border-radius: 5px;
+                            vertical-align: middle;
+                            border: 1px solid black;
+                            appearance: none;
+                            outline: none;
+                            cursor: pointer;
+
+                            &:checked {
+                                background-color: var(--color);
+                                box-shadow: 0 0 0 5px var(--color2) inset; 
+                            }
+                        }
+
+                        
+                        
+                    }
+                    .button-container {
+                        padding: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        //tworzenie buttona
+                        button {
+                            width: 8rem;
+                            height: 3rem;
+                            color: rgb(0, 0, 0);
+                            outline: none;
+                            border: var(--color);
+                            cursor: pointer;
+                            background-color: var(--color);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                            
+                            p {
+                                padding-right: 1rem;
+                                color: var(--color2);
+                                font-size: 12px;
+                            }
+                            // tworzenie arrowa w przycisku
+                            .arrow1 {
+                                position: absolute;
+                                display: inline-block;
+                                border: solid var(--color2);
+                                border-width: 0 0 1px 0;
+                                margin-bottom: 0.15rem;
+                                margin-left: 3.5rem;
+                                padding: 1px;
+                                width: 1.15rem;
+                            }
+
+                            .arrow2 {
+                                display: inline-block;
+                                border: solid var(--color2);
+                                border-width: 0 1px 1px 0;
+                                padding: 3px;
+                                transform: rotate(315deg);
+                                margin-left: 0.4rem;
+                                margin-bottom: 0.01rem;
+
+                            }
+
+                            
+                        }
+                    }  
+                    
+                }
+        }
+    }
+}
+
+//footer
+.footer-socials {
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    p {
+        margin-left: 40%;
+        font-size: 12px;
+        white-space: nowrap;
+        color: white;
+    }
+
+    .social-media {
+        display: flex;
+        gap: 2rem;
+        margin-left: 25%;
+        list-style: none;
+
+// tworzenie ikonek
+        .gg-facebook {
+            color: var(--color2);
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs,1));
+            width: 10px;
+            height: 10px
+        }
+        .gg-facebook::after,
+        .gg-facebook::before {
+            content: "";
+            display: block;
+            position: absolute;
+            box-sizing: border-box
+        }
+        .gg-facebook::before {
+            width: 8px;
+            height: 20px;
+            border-left: 4px solid;
+            border-top: 4px solid;
+            border-top-left-radius: 5px;
+            left: 6px
+        }
+        .gg-facebook::after {
+            width: 10px;
+            height: 4px;
+            background: currentColor;
+            top: 7px;
+            left: 4px;
+            transform: skew(-5deg)
+        }
+
+        .gg-youtube {
+            color: var(--color2);
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs,1));
+            width: 25px;
+            height: 18px;
+            box-shadow: 0 0 0 2px;
+            border-radius:
+            15px 15px 15px 15px /
+            45px 45px 45px 45px
+           }
+           
+           .gg-youtube::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            left: 11px;
+            top: 4px;
+            border-left: 5px solid currentColor;
+            border-top: 5px solid transparent;
+            border-bottom: 3px solid transparent
+           } 
+
+           .gg-crowdfire {
+               color: var(--color2);
+            display: block;
+            box-sizing: border-box;
+            position: relative;
+            transform: scale(var(--ggs,1));
+            width: 20px;
+            height: 20px
+           }
+           
+           .gg-crowdfire::after,
+           .gg-crowdfire::before {
+            content: "";
+            display: block;
+            position: absolute;
+            box-sizing: border-box
+           }
+           
+           .gg-crowdfire::before {
+            width: 20px;
+            height: 20px;
+            border: 4px solid;
+            border-radius: 100px;
+            border-right-color: transparent;
+            transform: rotate(-45deg)
+           }
+           
+           .gg-crowdfire::after {
+            width: 8px;
+            height: 8px;
+            border-top: 4px solid;
+            border-right: 4px solid;
+            right: 2px;
+            top: 2px
+           } 
+    }
+
+ }
+//media ktore nie zadziałały za dobrze, niestety ale za duzo zmieniałem w projekcie przez co całkiem się rozwaliło RWD ale chciałem grida dostosować do okienka uzytkownika.
+
+ @media only screen and (max-width: 999px) {
+     .walizka { display: none; }
+     .main-korzysci { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));}
+     
+     
+ }
+
+ @media only screen and (min-width: 499px) {
+    .main-onas { grid-template-columns: repeat(3, 1fr);}
+}
